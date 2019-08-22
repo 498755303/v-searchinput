@@ -1,15 +1,22 @@
 {
   "name": "v-searchinput",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "一个带搜索的输入框",
+  "main": "lib/v-searchinput.umd.min.js",
+  "keyword": "搜索 输入框",
+  "author": "HL",
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name v-searchinput --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "v-click-outside-x": "^4.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
@@ -18,7 +25,9 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0"
   },
   "eslintConfig": {
     "root": true,
